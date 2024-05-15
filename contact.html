@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <style>
+ /* Reset CSS */
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body Styles */
+    body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    /* Container Styles */
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* Header Styles */
+    header {
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #ffcd02;
+    }
+.hero h2 {
+  text-align: center;
+}
+
+    .contact-form {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 20px 5px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    .contact-form .form-group {
+      margin-bottom: 15px;
+    }
+
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"] {
+      width: 100%;
+      padding: 12px 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .contact-form button[type="submit"] {
+      background-color: #4CAF50; /* Green */
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      display: flex;
+      flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+      justify-content: space-between;
+      align-items: flex-start; /* Vertically align content at the top */
+    }
+
+    footer .container {
+      flex: 1; /* Make each footer section take up equal space */
+      text-align: left;
+    }
+
+    footer .container p:first-child {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    footer .container p:not(:first-child) {
+      line-height: 1.5; /* Adjust line spacing for better readability */
+    }
+
+    footer .container:last-child {
+      text-align: right; /* Align copyright text to the right */
+    }
+
+    footer .container h2 {
+  font-size: 0.8em; /* Adjust font size as desired */
+}
+
+/* Styling untuk kotak teks */
+#email-address {
+      width: 300px; /* Lebar kotak teks */
+      height: 40px; /* Tinggi kotak teks */
+      border: 1px solid darkolivegreen; /* Garis tepi */
+      padding: 10px; /* Jarak antara teks dan tepi kotak */
+      font-size: 16px; /* Ukuran teks */
+    }
+
+    /* Styling untuk tombol submit */
+    #submit-button {
+      background-color: saddlebrown; /* Warna latar belakang tombol */
+      color: white; /* Warna teks tombol */
+      padding: 10px 20px; /* Jarak antara teks dan tepi tombol */
+      border: none; /* Menghapus garis tepi tombol */
+      cursor: pointer; /* Menampilkan kursor sebagai pointer saat mouse di atas tombol */
+    }
+
+
+    p {
+  color: #666; /* Warna abu-abu gelap */
+}
+footer .container p#submitting-text {
+  text-align: left;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <h1>Barbershop </h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="portafolio.html">Gallery</a></li>
+                <li><a href="services.html">services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+  <section id="About" class="hero">
+    <h2>ABOUT US </h2>
+    <section class="contact-form">
+      <br><strong>Get in Touch</strong><br>
+      <form action="message">
+        <div class="input-group">
+          <input type="text" id="name" name="name" placeholder="enter message">
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" name="email" placeholder="enter your name">
+        </div>
+        <div class="input-group">
+          <input type="text" id="subject" name="subject" placeholder="email">
+        </div>
+        <div class="input-group">
+          <input type="text" id="subject" name="subject" placeholder="enter subject">
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </div>
+
+
+  
+  <footer>
+    <div class="container">
+        <p>LOCATION</p>
+        <div class="sub-container">
+            <p>Advanced</p>
+            <p>Management</p>
+            <p>Corporate</p>
+            <p>Customer</p>
+            <p>Information</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>EXPLORE</p>
+        <div class="sub-container">
+            <p>Cookies</p>
+            <p>About</p>
+            <p>Privacy Policy</p>
+            <p>Properties</p>
+            <p>Licenses</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Location</p>
+        <div class="sub-container">
+            <p>Subscribe now to get daily updates</p>
+            <div class="sub-container"></div>
+            <input type="email" id="email-address" placeholder="Your email address">
+            <button id="submit-button">Send</button>
+            <p>Submiting......</p>
+
+        </div>
+    </div>
+</footer>
+
+<hr class="border-separator">
+<div class="container"></div>
+<footer>
+  <div class="container">
+    <h2>Copyright ©2024 All rights reserved | This template is made with by Colorlib </h2>
+  </div>
+</footer>
+
+</body>
+</html>

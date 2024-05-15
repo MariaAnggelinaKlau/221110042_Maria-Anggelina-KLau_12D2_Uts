@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body Styles */
+    body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+
+    /* Container Styles */
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* Header Styles */
+    header {
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #ffcd02;
+    }
+        /* Gallery Styles */
+        #Gallery .row {
+            position: relative;
+        }
+
+        .image-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-column h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer-column p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Barbershop </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="portafolio.html">Gallery</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Image Gallery</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 position-relative">
+                    <img src="./asset/img/gallery_1.png" alt="Image 1" class="img-fluid">
+                    <div class="image-text"></div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="./asset/img/gallery_1.png" alt="Image 1" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="./asset/img/gallery_2.png" alt="Image 2" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="./asset/img/gallery_3.png" alt="Image 3" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="./asset/img/gallery_4.png" alt="Image 4" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="./asset/img/gambar_4.jpg" alt="Image 5" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="./asset/img/gallery_3.png" alt
+
+                    ="Image 6" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="./asset/img/gambar_10.jpeg" alt="Image 7" class="img-fluid">
+                </div>
+                <div class="col-md-4 mb-4">
+                    <img src="./asset/img/gambar_9.jpeg" alt="Image 8" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>LOCATION</h3>
+                    <p>Advanced</p>
+                    <p>Management</p>
+                    <p>Corporate</p>
+                    <p>Customer</p>
+                    <p>Information</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>EXPLORE</h3>
+                    <p>Cookies</p>
+                    <p>About</p>
+                    <p>Privacy Policy</p>
+                    <p>Properties</p>
+                    <p>Licenses</p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3>Subscribe now</h3>
+                    <p>Subscribe now to get daily updates</p>
+                    <input type="email" id="email-address" placeholder="Your email address">
+                    <button id="submit-button">Send</button>
+                    <p class="submit-message">Submitting...</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="bottom-footer bg-dark py-3">
+        <div class="container">
+            <hr class="footer-separator mb-3">
+            <p class="text-center text-white small">Copyright ©2024 All rights reserved | This template is made with by Colorlib</p>
+        </div>
+    </footer>
+
+
+</body>
+</html>

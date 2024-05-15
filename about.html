@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  /* Reset CSS */
+  * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Body Styles */
+    body {
+        font-family: 'Roboto', sans-serif;
+        line-height: 1.6;
+        background-color: gray;
+        color: #333;
+    }
+
+    /* Container Styles */
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    /* Header Styles */
+    header {
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    header h1 {
+        margin-bottom: 10px;
+        font-size: 36px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+        transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+        color: #ffcd02;
+    }
+
+/* Main Content Styles */
+main {
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+}
+#home.hero img {
+  width: 100%;  /* Set image width to 100% of its container */
+  height: auto;  /* Maintain aspect ratio when resizing */
+  display: block;  /* Ensure image behaves like a block element */
+  margin: 0 auto;  /* Center the image horizontally */
+}
+
+h2 {
+  background-image: url("path/to/your/image.jpg");  /* Replace with your image path */
+  background-size: cover;  /* Ensure image covers the entire background */
+  background-repeat: no-repeat;  /* Prevent image repetition */
+  padding: 50px 50px;  /* Add some padding for content */
+  color: black;  /* Adjust text color for better contrast (optional) */
+  text-align: center\;  /* Center text if desired */
+}
+h2 {
+  text-align: center;
+}
+.btn {
+  background-color: black; /* Adjust background color */
+  color: white; /* Adjust text color */
+  padding: 20px 20px; /* Adjust padding */
+  border: none;
+  border-radius: 5px; /* Add rounded corners */
+  font-weight: bold; /* Make text bold */
+  text-decoration: none; /* Remove underline from text */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  display: inline-block; /* Allow text to wrap on multiple lines if needed */
+}
+
+.btn:hover {
+  background-color: wheat; /* Adjust hover background color */
+}
+
+
+.image-container {
+  display: grid; /* Enable grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr)); /* Adjust column size and number */
+  gap: 50px; /* Add spacing between images */
+}
+
+#ABOUT
+
+/* Base styles for consistent formatting */
+section {
+  margin: 0 auto; /* Center the section horizontally */
+  padding: 40px 0; /* Add some top and bottom padding */
+}
+
+h2 {
+  text-align: center; /* Center the heading text */
+  font-size: 2rem; /* Adjust font size as needed */
+  margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.hero {
+  background-color: #f5f5f5; /* Light background color */
+}
+
+/* Styles for the image container */
+.image-container {
+  display: flex; /* Allow for flexible image positioning */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+  margin: 0 auto; /* Center the image container horizontally */
+  max-width: 800px; /* Set a maximum width for responsiveness */
+}
+
+.image-container img {
+  width: 100%; /* Make the image fill the container width */
+  object-fit: cover; /* Cover the container while maintaining aspect ratio */
+  border-radius: 5px; /* Add a slight rounded corner effect */
+}
+
+/* Styles for the text container (optional) */
+.text-container {
+  background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+  padding: 20px;
+  margin-top: 20px; /* Add top margin for better separation */
+}
+
+/* Adjust these styles for responsive behavior on smaller screens */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.5rem; /* Reduce heading size for smaller viewports */
+  }
+  .image-container img {
+    border-radius: 3px; /* Adjust corner radius for smaller images */
+  }
+}
+
+
+
+
+/* General styling */
+body {
+      font-family: sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Container for the entire content */
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Image styling */
+    .image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+
+    /* Title styling */
+    .title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .description {
+  font-weight: normal;
+}
+
+
+.centered-paragraph {
+  text-align: center;
+}
+
+.service-section img {
+  width: 270px; /* Adjust width as needed */
+  height: auto;
+  object-fit: cover; /* Fills the container while maintaining aspect ratio */
+}
+
+
+.description {
+  text-align: center;
+}
+
+
+
+.service-section {
+    float: left;
+}
+
+.service-section {
+    text-align: center; /* Center content within sections */
+}
+
+.service-section {
+  margin-bottom: 20px; /* Adjust the value for desired spacing */
+}
+
+.service-section img {
+  /* Choose one of the following methods: */
+
+  /* Method 1: Fixed size (Simple and direct) */
+  /* Adjust width and height as desired */
+  width: 100px;
+  height: 200px;
+
+  /* Method 2: Responsive size (Flexible) */
+  /* Image scales down to fit container width, with a maximum height */
+  width: 90px;
+  height: 200px;
+
+  /* Method 3: Responsive size with aspect ratio preservation (Recommended) */
+  /* Image scales proportionally to fit container width while maintaining aspect ratio */
+  width: 100%; /* Ensures responsiveness */
+  object-fit: cover; /* Fills available space while maintaining aspect ratio */
+}
+
+
+.service-section img {
+  /* ... (your preferred image size method) */
+
+  margin: 20px 15px 10px 5px; /* Top, right, bottom, left */
+}
+
+
+.container {
+  display: left;
+}
+
+#services {
+  flex: left; /* Menempatkan section ke kiri */
+  margin-right:10px; /* Memberi jarak antara section dengan elemen lain jika diinginkan */
+}
+.left-image {
+  float: left;
+  width: 60%; /* Atur lebar gambar sesuai kebutuhan */
+  margin-right: 10px; /* Memberi jarak antara gambar dengan teks jika diinginkan */
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-and-text {
+  display: flex;
+  flex-direction: row;
+}
+
+.image-and-table {
+  margin-right: 20px;
+}
+
+.left-image {
+  width: 500px;
+  height: 500px;
+}
+
+.right-text {
+  flex: 1;
+  text-align: center;
+}
+
+.container {
+  text-align: left;
+}
+
+table {
+  width: 50%;
+}
+
+td {
+  padding: 2px;
+}
+
+.price {
+  text-align: right;
+}
+
+
+
+.container p,
+    .container h2 {
+      margin-bottom: 1px;
+    }
+
+   
+    .image-gallery img {
+      width: 200px; /* Sesuaikan ukuran yang diinginkan */
+      height: 200px; /* Sesuaikan ukuran yang diinginkan */
+      object-fit: cover; /* Untuk memastikan gambar tetap proporsional */
+    }
+
+    footer {
+      background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex; /* Mengaktifkan flexbox */
+    justify-content: space-between; /* Mengatur ruang di antara elemen secara merata */
+  }
+
+footer .container {
+    display: flex;
+    align-items: right;
+}
+
+footer .container p {
+    margin-right: 50px; /* Jarak antara elemen-elemen dalam kontainer */
+}
+
+footer .container:last-child p {
+    margin-right: 0; /* Menghapus margin kanan pada elemen terakhir */
+}
+
+/* Styling untuk gambar */
+.barbershop-img {
+        width: 100px; /* Lebar gambar */
+        height: auto; /* Tinggi gambar disesuaikan secara otomatis */
+        margin-left: 20px; /* Jarak antara gambar dengan teks */
+    }
+
+/* Styling untuk kotak teks */
+#email-address {
+      width: 300px; /* Lebar kotak teks */
+      height: 40px; /* Tinggi kotak teks */
+      border: 1px solid darkolivegreen; /* Garis tepi */
+      padding: 10px; /* Jarak antara teks dan tepi kotak */
+      font-size: 16px; /* Ukuran teks */
+    }
+
+    /* Styling untuk tombol submit */
+    #submit-button {
+      background-color: saddlebrown; /* Warna latar belakang tombol */
+      color: white; /* Warna teks tombol */
+      padding: 10px 20px; /* Jarak antara teks dan tepi tombol */
+      border: none; /* Menghapus garis tepi tombol */
+      cursor: pointer; /* Menampilkan kursor sebagai pointer saat mouse di atas tombol */
+    }
+
+
+    p {
+  color: #666; /* Warna abu-abu gelap */
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Barbershop </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">about</a></li>
+                    <li><a href="portafolio.html">Gallery</a></li>
+                    <li><a href="services.html">services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="About" class="hero">
+        <h2>ABOUT US </h2>
+        <div class="image-container">
+          <img src="./asset/img/image_2.png" alt="Image 1">
+          <div class="text-container">
+            <h2>OUR EXPERIENCE IN HAIR CUTTING!</h2>
+            <p>
+                <b>Tingkatkan gaya Anda dengan layanan potong rambut istimewa kami</b><br>
+                <b>yang dirancang khusus untuk menonjolkan fitur unik dan gaya pribadi Anda.</b><br>
+                Rasakan sentuhan elegan dan presisi dari penata rambut ahli kami yang akan mengantarkan Anda pada transformasi gaya yang memukau.
+              </p>                  
+        <div class="container">
+          </div>
+      </section>
+      
+<div class="text-container">
+<p class="centered-paragraph">
+    PROFESSIONAL SERVICES </p>
+        <h2>THE BEST HAIR MODEL SERVICE WE OFFER TO YOU!!</h2>
+    
+        <div class="service-container">
+            <div class="service-section">
+              <h3>Gaya Rambut Morrissey</h3>
+              <img src="./asset/img/Gaya Rambut Morrissey.avif" alt="Gaya Rambut Morrissey">
+              <p class="description">
+                <b>gaya rambut Morrissey ini </b><br>
+                <b>punya ciri khas panjang rambut</b><br>
+                <b> di bagian depan </b>
+              </p>
+            </div>
+          
+      
+          
+            <div class="service-section">
+              <h3>Curtain Haircut</h3>
+              <img src="./asset/img/curtain.jpeg" alt="Curtain Haircut">
+              <p class="description"> 
+                <b>gaya rambut belah dua yang ditandai  </b><br>
+                <b>dengan poni panjang bervolume </b><br>
+                <b>di kedua sisi wajah untuk </b><br>
+                <b>membingkainya seperti tirai </b>
+              </p>
+            </div>
+          </div>
+          
+          
+          <div class="service-container">
+            <div class="service-section">
+              <h3>Comma Hair.</h3>
+              <img src="./asset/img/comma_hair2.jpeg" alt="Comma Hair.">
+              <p class="description">
+                <b>Ini dia salah satu gaya rambut </b><br>
+                <b> andalan para idol Korea!</b><br>
+                <b>Pada rambut comma hair  </b><br>
+                <b>samping kanan dan kiri </b><br>
+                <b>ditata dengan gaya melengkung.</b>
+              </p>
+            </div>
+          
+            <div class="service-section"> 
+               <h3>Pompadour</h3>
+              <img src="./asset/img/Pompadour.avif" alt="Pompadour">
+              <p class="description">
+                <b>pompadour tergolong model rambut </b><br>
+                <b>ikonik dan timeless </b><br>
+                <b> Ciri khasnya ada pada seluruh  </b><br>
+                <b>bagian atas rambut yang bervolume </b><br>
+                <b>Model rambut ini cocok untuk </b><br>
+                <b>yang punya rambut tebal.</b>
+              </p>
+            </div>
+          
+            <div class="service-section">
+              <h3>Taper Cut</h3>
+              <img src="./asset/img/Taper Cut.avif" alt="Taper Cut.">
+              <p class="description">
+                <b>Teknik gunting rambut  </b><br>
+                <b> yang membuat rambut semakin </b><br>
+                <b>pendek dari atas ke bawah </b>
+              </p>
+            </div>
+          </div>
+        
+          <div class="service-container">
+            <div class="service-section">
+              <h3>Edgar Cut</h3>
+              <img src="./asset/img/Edgar Cut..avif" alt="Edgar Cut">
+              <p class="description">
+                <b>kombinasi potongan Caesar dengan</b><br>
+                <b>atasan klasik bersisir depan dan </b><br>
+                <b>warna pudar tinggi di bagian samping</b>
+              </p>
+            </div>
+          
+            <div class="service-section"> 
+               <h3>Quiff</h3>
+              <img src="./asset/img/Quiff.jpeg" alt="Quiff.">
+              <p class="description">
+                <b>gaya rambut di mana bagian depan</b><br>
+                <b>disisir ke atas dengan </b><br>
+                <b>fleksibilitas yang lebih besa</b>
+              </p>
+            </div>
+          
+            <div class="service-section">
+              <h3>Fringe Haircut.</h3>
+              <img src="./asset/img/Low fade1.jpeg" alt="Fringe Haircut.">
+              <p class="description">
+                <b>Fringe Haircut adalah </b><br>
+                <b>gaya rambut pria berponi</b>
+              </p>
+            </div>
+          </div>
+       
+
+         
+  
+         
+    <div class="container"></div>    
+      <section id="services">
+        <div class="container">
+          <p style="font-weight: bold; color: black;"></p>
+          <h2><strong style="color: teal;">Our Best Pricing!</strong></h2>
+
+          <section id="About" class="hero">
+            <h2>WE PROVIDE BEST PRICE IN THE CITY!</h2>
+            <div class="image-container">
+              <img src="./asset/img/image_10.png" alt="Image 1">
+              <div class="text-container">
+                <h2>OUR BASIC</h2>
+                <p>
+                    <b>"Di sini, kami menawarkan berbagai layanan terbaik untuk memenuhi kebutuhan gaya dan perawatan Anda.</b><br>
+                    <b>Dari potongan rambut yang trendi hingga warna rambut yang mencolok, kami siap membantu Anda tampil maksimal. </b><br>
+                    <b>Temukan harga yang terjangkau untuk setiap layanan, sehingga Anda dapat menikmati pengalaman perawatan yang  </b><br>
+                    <b>berkualitas tanpa menguras dompet Anda."</b>
+                    Rasakan sentuhan elegan dan presisi dari penata rambut ahli kami yang akan mengantarkan Anda pada transformasi gaya yang memukau.
+                  </p>                  
+            <div class="container">
+              </div>
+          </section>
+          <table>
+            <h2>PRICE OF HAIR MODELS</h2>
+            <tr>
+              <td><strong>STYLING..................................................................................</td>
+              <td class="price">$25</td>
+            </tr>
+            <tr>
+              <td><strong>STYLING + COLOR.................................................................</td>
+              <td class="price">$65</td>
+            </tr>
+            <tr>
+              <td><strong>STYLING + TINT......................................................................</td>
+              <td class="price">$65</td>
+            </tr>
+            <tr>
+              <td><strong>SEMI-PERMANENT WAVE......................................................</td>
+              <td class="price">$65</td>
+            </tr>
+            <tr>
+              <td><strong>CUT + STYLING.......................................................................</td>
+              <td class="price">$65</td>
+            </tr>
+            <tr>
+              <td><strong>CUT + STYLING + COLOR.....................................................</td>
+              <td class="price">$100</td>
+            </tr>
+            <tr>
+              <td><strong>CUT + STYLING + TINT...........................................................</td>
+              <td class="price">$100</td>
+            </tr>
+            <tr>
+              <td><strong>CUT...........................................................................................</td>
+              <td class="price">$100</td>
+            </tr>
+            <tr>
+              <td><strong>SHAVE...................................................................................</td>
+              <td class="price">$65</td>
+            </tr>
+            <tr>
+              <td><strong>BEARD TRIM..........................................................................</td>
+              <td class="price">$65</td>
+            </tr>
+            <tr>
+              <td><strong>CUT + BEARD TRIM...............................................................</td>
+              <td class="price">$65</td>
+            </tr>
+            <tr>
+              <td><strong>CUT+SHAVE...........................................................................</td>
+              <td class="price">$65</td>
+            </tr>
+            <tr>
+              <td><strong>CLEAN UP...............................................................................</td>
+              <td class="price">$65</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+         
+      <section id="Gallery">
+        <div class="container">
+          <p style="font-weight: bold; color: black;">OUR IMAGE GELLARY</p>
+          <h2><strong style="color: teal;">SOME IMAGES FROM OUR BARBER SHOP</strong></h2>  
+
+          <div class="image-gallery">
+            <img src="./asset/img/gallery_1.png" alt="Image 1">
+            <img src="./asset/img/gallery_2.png" alt="Image 2">
+            <img src="./asset/img/gallery_3.png" alt="Image 3">
+            <img src="./asset/img/gallery_4.png" alt="Image 4">
+            <img src="./asset/img/gambar_4.jpg" alt="Image 4">
+            <img src="./asset/img/gallery_3.png" alt="Image 4">
+            <img src="./asset/img/gambar_10.jpeg" alt="Image 4">
+            <img src="./asset/img/gambar_9.jpeg" alt="Image 4">
+          </div>
+        </div>
+      </section>
+
+      
+    
+      <footer>
+        <div class="container">
+            <p>LOCATION</p>
+            <div class="sub-container">
+                <p>Advanced</p>
+                <p>Management</p>
+                <p>Corporate</p>
+                <p>Customer</p>
+                <p>Information</p>
+            </div>
+        </div>
+    
+        <div class="container">
+            <p>EXPLORE</p>
+            <div class="sub-container">
+                <p>Cookies</p>
+                <p>About</p>
+                <p>Privacy Policy</p>
+                <p>Properties</p>
+                <p>Licenses</p>
+            </div>
+        </div>
+    
+        <div class="container">
+            <p>Location</p>
+            <div class="sub-container">
+                <p>Subscribe now to get daily updates</p>
+                <div class="sub-container"></div>
+                <input type="email" id="email-address" placeholder="Your email address">
+                <button id="submit-button">Send</button>
+                <p>Submiting......</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <hr class="border-separator">
+
+    <footer>
+      <div class="container">
+        <br>Copyright ©2024 All rights reserved | This template is made with by Colorlib</br>
+      </div>
+    </footer>
+</body>
+</html>
